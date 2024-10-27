@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Vehicle Tracking System</title>
+</head>
+<body>
+    <header>
+        <h1>Vehicle Tracking System</h1>
+    </header>
+    
+    <main>
+        <section id="vehicle-entry">
+            <h2>Manual Vehicle Entry</h2>
+            <form id="vehicle-form">
+                <label for="vehicle-number">Vehicle Number:</label>
+                <input type="text" id="vehicle-number" required>
+                
+                <button type="submit">Log Vehicle</button>
+            </form>
+        </section>
+        
+        <section id="vehicle-log">
+            <h2>Vehicle Log</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehicle Number</th>
+                        <th>Arrival Time</th>
+                        <th>Departure Time</th>
+                    </tr>
+                </thead>
+                <tbody id="vehicle-log-body">
+                    <!-- Log entries will be appended here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
